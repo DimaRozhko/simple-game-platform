@@ -1,0 +1,24 @@
+<div class="main-border-color main-font-size padding-3">
+    <div class="rectangle-background main-border-color padding-6v">
+        <div class="container">
+            <div *ngFor="let field of this.inputFieldAuth" class="row main-margin">
+                <input type="{{field.typeInputField}}" placeholder="{{field.placeholderInputField}}" 
+                    class="component-invisable-background main-border-color main-text-color">
+                <br>
+            </div>
+            <div class="row main-margin">
+                <div class="col">
+                    <input type="button" value="{{mainButtonAuth.value}}" 
+                        class="component-invisable-background main-border-color main-text-color main-font-bold  main-font-italic w-100">
+                </div>
+            </div>
+            <div class="row main-margin">
+                <div *ngFor="let btn of this.otherButtonAuth" class="col">
+                    <input type="button" value="{{btn.value}}" 
+                        class="component-invisable-background main-border-color main-text-color main-font-bold main-font-italic w-100 h-100"
+                        [style]="btn.style">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

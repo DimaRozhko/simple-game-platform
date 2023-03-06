@@ -1,0 +1,38 @@
+@import url(../../node_modules/@fontsource/jura/);
+@import url(../../node_modules/@fontsource/inter/);
+
+.background {
+    background: linear-gradient(#004155 -50%, #000000);
+    height: 100vh;
+    font-family: "Inter";
+}
+
+.main-text-color {
+    color: #00C2FF;
+}
+
+.main-border-color {
+    border-color: #00C2FF;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.main-font-size {
+    font-size: 4vh;
+}
+
+.component-invisable-background {
+    background-color: transparent;
+}
+
+.main-margin {
+    margin: 2vh;
+}
+
+.main-font-bold {
+    font-weight: bold;
+}
+
+.main-font-italic {
+    font-style: italic;
+}
