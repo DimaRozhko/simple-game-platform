@@ -20,7 +20,8 @@ export class LogInComponent implements OnInit {
     ];
     this.mainButton = { value: "Log in", style: ""};
     this.buttons = [
-      { value: "Forgot\npassword", style: "border-color: transparent; text-decoration: underline; font-size: 3vh; font-weight: normal;"},
+      { value: "Forgot\npassword", 
+        style: "border-color: transparent; text-decoration: underline; font-size: 3vh; font-weight: normal; background: transparent;"},
       { value: "Sign up", style: ""}
     ];
   }

@@ -1,21 +1,23 @@
-<div class="main-border-color main-font-size padding-3">
-    <div class="rectangle-background main-border-color padding-6v">
+<div class="sgp-border-color sgp-font-size sgp-field-round padding-3">
+    <div class="rectangle-background sgp-border-color sgp-field-round padding-6v">
         <div class="container">
-            <div *ngFor="let field of this.inputFieldAuth" class="row main-margin">
+            <div *ngFor="let field of this.inputFieldAuth" class="row sgp-margin">
                 <input type="{{field.typeInputField}}" placeholder="{{field.placeholderInputField}}" 
-                    class="component-invisable-background main-border-color main-text-color">
+                    class="component-invisable-background sgp-border-color sgp-text-color sgp-focus">
                 <br>
             </div>
-            <div class="row main-margin">
+            <div class="row sgp-margin">
                 <div class="col">
                     <input type="button" value="{{mainButtonAuth.value}}" 
-                        class="component-invisable-background main-border-color main-text-color main-font-bold  main-font-italic w-100">
+                        class="component-invisable-background w-100
+                            sgp-border-color sgp-text-color sgp-font-bold sgp-font-italic sgp-bth-round sgp-bth-background">
                 </div>
             </div>
-            <div class="row main-margin">
+            <div class="row sgp-margin">
                 <div *ngFor="let btn of this.otherButtonAuth" class="col">
                     <input type="button" value="{{btn.value}}" 
-                        class="component-invisable-background main-border-color main-text-color main-font-bold main-font-italic w-100 h-100"
+                        class="component-invisable-background w-100 h-100
+                            sgp-border-color sgp-text-color sgp-font-bold sgp-font-italic sgp-bth-round sgp-bth-background"
                         [style]="btn.style">
                 </div>
             </div>

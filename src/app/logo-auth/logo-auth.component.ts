@@ -5,6 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './logo-auth.component.html',
   styleUrls: ['./logo-auth.component.css']
 })
-export class LogoAuthComponent {
-
-}
+export class LogoAuthComponent { }
