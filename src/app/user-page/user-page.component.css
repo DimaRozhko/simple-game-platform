@@ -1,0 +1,26 @@
+@import url('../app.component.css');
+
+.sgp-margin {
+    margin-top: 10vh;
+    margin-left: 20vw;
+}
+
+.sgp-table-layout-fixed {
+    table-layout: fixed;
+}
+
+.sgp-font-size-user-card {
+    font-size: 3vh;
+}
+
+.sgp-font-normail {
+    font-style: normal;
+}
+
+.sgp-text-decoration {
+    text-decoration: underline;
+}
+
+.sgp-text-start {
+    text-align: start;
+}
