@@ -1,1 +1,22 @@
-<p>info-page works!</p>
+<div class="fixed-top sgp-margin sgp-font-size-user-card sgp-font-italic">
+    <div *ngFor="let info of this.infoGames" class="sgp-border-color sgp-field-round padding-3 sgp-margin-bottom">
+        <div class="sgp-border-color sgp-field-round padding-3v">
+            <table class="sgp-text-color">
+                <tbody>
+                    <tr>
+                        <td class="col sgp-font-bold sgp-w-20">Name of game:</td>
+                        <td class="col sgp-text-decoration sgp-w-80">{{info.name}}</td>
+                    </tr>
+                    <tr>
+                        <td class="col sgp-font-bold sgp-w-20">Rule:</td>
+                        <td class="col sgp-font-normail sgp-w-80">{{info.rule}}</td>
+                    </tr>
+                    <tr>
+                        <td class="col sgp-font-bold sgp-w-20">History:</td>
+                        <td class="col sgp-font-normail sgp-w-80">{{info.history}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
