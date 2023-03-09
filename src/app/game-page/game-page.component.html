@@ -1,1 +1,13 @@
-<p>game-page works!</p>
+<div class="fixed-top d-flex justify-content-center sgp-margin sgp-font-size-user-card">
+    <div class="sgp-border-color sgp-field-round padding-3 sgp-margin-bottom w-50">
+        <div class="sgp-border-color sgp-field-round padding-3v">
+            <div class="conteiner sgp-text-color sgp-text-align-center">
+                <div *ngFor="let gameRow of this.gameField" class="row">
+                    <div *ngFor="let value of gameRow" class="col sgp-font-bold sgp-border-color sgp-field-round">
+                        {{value}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
