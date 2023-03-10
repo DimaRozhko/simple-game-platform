@@ -10,6 +10,7 @@ export class GamePageComponent {
   gameField: string[][];
   isClick: boolean;
   savedEventList: any[];
+  elementsToMove: any[];
 
   constructor() {
     this.gameField = [
@@ -20,11 +21,15 @@ export class GamePageComponent {
     ];
     this.isClick = false;
     this.savedEventList = [];
+    this.elementsToMove = [];
   }
 
   onMouseOverItem(event: any) : void {
     event.srcElement.classList.add('sgp-bth-background-press');
     this.savedEventList.push(event);
+    if (this.isClick == true) {
+      this.elementsToMove.push(event);
+    }
   }
 
   onMouseOutItem(event: any): void {
@@ -37,16 +42,17 @@ export class GamePageComponent {
     this.isClick = true;
     event.srcElement.classList.add('sgp-bth-background-press');
     this.savedEventList.push(event);
+    this.elementsToMove.push(event);
   }
 
   onMouseUp(event: any): void {
     this.isClick = false;
     this.savedEventList.forEach(savedEvent => this.onMouseOutItem(savedEvent));
-    console.log(this.savedEventList);
-    if (this.savedEventList.length === 2) {
+    if (this.elementsToMove.length === 2) {
       console.log("MOVE");
       // this.savedEventList.forEach(savedEvent => console.log(savedEvent));
     }
     this.savedEventList = [];
+    this.elementsToMove = [];
   }
 }
