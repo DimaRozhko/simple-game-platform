@@ -27,6 +27,11 @@
     font-weight: bold;
 }
 
+.sgp-font-jura-bold {
+    font-family: "Jura";
+    font-weight: bold;
+}
+
 .component-invisable-background {
     background-color: transparent;
 }

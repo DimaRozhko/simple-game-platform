@@ -3,9 +3,9 @@
         <div class="sgp-border-color sgp-field-round padding-3v">
             <div class="conteiner sgp-text-color sgp-text-align-center">
                 <div *ngFor="let gameRow of this.gameField" class="row">
-                    <div *ngFor="let value of gameRow" class="col sgp-font-bold sgp-border-color sgp-field-round">
-                        {{value}}
-                    </div>
+                    <input *ngFor="let value of gameRow" type="button" value="{{value}}" (mouseover)="onMouseOverItem($event)"
+                        (mouseout)="onMouseOutItem($event)" (mousedown)="onMouseDown($event)" (mouseup)="onMouseUp($event)"
+                        class="col sgp-font-bold sgp-border-color sgp-field-round component-invisable-background sgp-text-color sgp-bth-background sgp-font-jura-bold">
                 </div>
             </div>
         </div>
