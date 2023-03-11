@@ -1,6 +1,11 @@
 # SimpleGamePlatform
 
+## Developer information
+>#### _Student name:_ Dmytro Rozhko
+>#### _Group:_        KV-21mn
+
 ## Lab information
+>#### _Lab number:_ 1
 >#### _The purpose of the work:_ learn how to use the Javascript framework, the NodeJS framework, and the Twitter Bootstrap (or Material UI) library to build a web user interface.
 
 >#### _General task:_ develop the client part of the Web application.
