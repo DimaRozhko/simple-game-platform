@@ -18,11 +18,22 @@ export class LogInComponent implements OnInit {
       { typeInputField: "text", placeholderInputField: "email"},
       { typeInputField: "password", placeholderInputField: "password"}
     ];
-    this.mainButton = { value: "Log in", style: ""};
+    this.mainButton = {
+      value: "Log in",
+      style: "",
+      redirectPath: "/user-page"
+    };
     this.buttons = [
-      { value: "Forgot\npassword", 
-        style: "border-color: transparent; text-decoration: underline; font-size: 3vh; font-weight: normal; background: transparent;"},
-      { value: "Sign up", style: ""}
+      {
+        value: "Forgot\npassword", 
+        style: "border-color: transparent; text-decoration: underline; font-size: 3vh; font-weight: normal; background: transparent;",
+        redirectPath: "/log-in"
+      },
+      {
+        value: "Sign up",
+        style: "",
+        redirectPath: '/sign-up'
+      }
     ];
   }
 }

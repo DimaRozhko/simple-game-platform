@@ -19,10 +19,13 @@ export class SignUpComponent {
       { typeInputField: "text", placeholderInputField: "email"},
       { typeInputField: "password", placeholderInputField: "password"}
     ];
-    this.mainButton = { value: "Sign up", style: ""};
+    this.mainButton = { value: "Sign up", style: "", redirectPath: "/user-page"};
     this.buttons = [
-      { value: "Log in",
-        style: "border-color: transparent; text-decoration: underline; font-size: 3vh; font-weight: normal; background: transparent;"}
+      {
+        value: "Log in",
+        style: "border-color: transparent; text-decoration: underline; font-size: 3vh; font-weight: normal; background: transparent;",
+        redirectPath: "/log-in"
+      }
     ];
   }
 }

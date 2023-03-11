@@ -1,12 +1,27 @@
-<div class="fixed-top d-flex justify-content-center sgp-margin sgp-font-size-user-card">
-    <div class="sgp-border-color sgp-field-round padding-3 sgp-margin-bottom w-50">
+<div class="fixed-top d-flex justify-content-center sgp-margin sgp-font-size-user-card sgp-text-color sgp-text-align-center sgp-font-jura-bold">
+    <div class="sgp-border-color sgp-field-round padding-3 sgp-margin-bottom w-50" [ngClass]="this.opacityClass">
         <div class="sgp-border-color sgp-field-round padding-3v">
-            <div class="conteiner sgp-text-color sgp-text-align-center">
+            <div class="conteiner">
                 <div *ngFor="let gameRow of this.gameField" class="row">
-                    <input *ngFor="let value of gameRow" type="button" value="{{value}}" (mouseover)="onMouseOverItem($event)"
+                    <input *ngFor="let item of gameRow" type="button" value="{{item.value}}" (mouseover)="onMouseOverItem($event)"
                         (mouseout)="onMouseOutItem($event)" (mousedown)="onMouseDown($event)" (mouseup)="onMouseUp($event)"
-                        class="col sgp-font-bold sgp-border-color sgp-field-round component-invisable-background sgp-text-color sgp-bth-background sgp-font-jura-bold">
+                        class="col sgp-font-bold sgp-border-color sgp-field-round component-invisable-background sgp-text-color sgp-bth-background"
+                        [ngClass]="item.class" [disabled]="this.isWin">
                 </div>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="this.isWin" class="sgp-background-congratulation position-absolute top-50 start-50 translate-middle">
+        <div class="conteiner">
+            <div class="row">
+                CONGRATULATIONS
+            </div>
+            <div class="row justify-content-center sgp-font-size">
+                you are winner
+            </div>
+            <div class="row justify-content-center">
+                <input type="button" value="continue" (click)="onCongratulation()"
+                    class="sgp-font-size sgp-font-bold sgp-border-color sgp-field-round sgp-text-color sgp-bth-background sgp-w-20">
             </div>
         </div>
     </div>

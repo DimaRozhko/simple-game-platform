@@ -8,17 +8,21 @@
             </div>
             <div class="row sgp-margin">
                 <div class="col">
-                    <input type="button" value="{{mainButtonAuth.value}}" 
-                        class="component-invisable-background w-100
-                            sgp-border-color sgp-text-color sgp-font-bold sgp-font-italic sgp-bth-round sgp-bth-background">
+                    <a href="{{mainButtonAuth.redirectPath}}">
+                        <input type="button" value="{{mainButtonAuth.value}}" 
+                            class="component-invisable-background w-100
+                                sgp-border-color sgp-text-color sgp-font-bold sgp-font-italic sgp-bth-round sgp-bth-background">
+                    </a>
                 </div>
             </div>
             <div class="row sgp-margin">
                 <div *ngFor="let btn of this.otherButtonAuth" class="col">
-                    <input type="button" value="{{btn.value}}" 
-                        class="component-invisable-background w-100 h-100
-                            sgp-border-color sgp-text-color sgp-font-bold sgp-font-italic sgp-bth-round sgp-bth-background"
-                        [style]="btn.style">
+                    <a href="{{btn.redirectPath}}">
+                        <input type="button" value="{{btn.value}}" 
+                            class="component-invisable-background w-100 h-100
+                                sgp-border-color sgp-text-color sgp-font-bold sgp-font-italic sgp-bth-round sgp-bth-background"
+                            [style]="btn.style">
+                    </a>
                 </div>
             </div>
         </div>

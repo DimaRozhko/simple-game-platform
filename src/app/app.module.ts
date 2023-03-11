@@ -24,7 +24,7 @@ import { GamePageComponent } from './game-page/game-page.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

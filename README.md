@@ -1,27 +1,42 @@
 # SimpleGamePlatform
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.1.
+## Lab information
+>#### _The purpose of the work:_ learn how to use the Javascript framework, the NodeJS framework, and the Twitter Bootstrap (or Material UI) library to build a web user interface.
 
-## Development server
+>#### _General task:_ develop the client part of the Web application.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+>#### _Development tools:_ VS Code, Javascript, Twitter Bootstrap, Material UI, NodeJS, diagram.net.
 
-## Code scaffolding
+## Documentation
+>#### Description mockup of pages was developed by diagram.net ([link](https://app.diagrams.net/?mode=google&gfw=1#G15_n9h3q4Xvk0IAebAW-Hz3br2k6fS2Fr)) and figma ([link](https://www.figma.com/file/1onoj0JQquYlLwjXThJVEW/simple-game-platform?node-id=14%3A186&t=F6MEZLaoAXDD8Bwu-0))
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+>#### Description of lab was developed by google docs ([link](https://docs.google.com/document/d/1NgWbUEYJ2b5xpamVhvCZi6JI5QM_ohS76W5MUpyRwvw/))
 
-## Build
+## Additional information
+>#### There is a piece of code to test victory in 3 steps. You must uncomment code below from `simple-game-platform/src/app/game-page/game-page.component.ts` for it.
+```ts
+        //////////TEST WIN///////////////
+        if (this.finishStep >= 3) {
+            this.finishStep = 0;
+            this.gameField = [
+                [{value: '1'} , {value: '2'}, {value: '3'}, {value: '4'} ],
+                [{value: '5'} , {value: '6'}, {value: '7'}, {value: '8'} ],
+                [{value: '9'} , {value: '10'}, {value: '11'}, {value: '12'} ],
+                [{value: '13'} , {value: '14'}, {value: '15'}, {value: START_GAME_BUTTON, class: FONT_START_GAME_CLASS} ],
+            ];
+            this.isStartGame = false;
+            this.isWin = true;
+            this.opacityClass = OPACITY_CLASS;
+        }
+        else {
+            this.finishStep++;
+        }
+        //////////TEST WIN///////////////
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+>This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.1.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Development server
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+>Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
