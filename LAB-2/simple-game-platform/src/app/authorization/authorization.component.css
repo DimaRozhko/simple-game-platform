@@ -1,0 +1,13 @@
+@import url(../app.component.css);
+
+.padding-3 {
+    padding: 3px;
+}
+
+.rectangle-background {
+    background: radial-gradient(black 20%, transparent);   
+}
+
+.padding-6v {
+    padding: 6vh;
+}

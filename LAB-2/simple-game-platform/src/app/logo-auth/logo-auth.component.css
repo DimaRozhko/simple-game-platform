@@ -1,0 +1,7 @@
+@import url(../app.component.css);
+
+.font-logo {
+    font-size: 8vh;
+    font-family: "Jura";
+    font-weight: bold;
+}

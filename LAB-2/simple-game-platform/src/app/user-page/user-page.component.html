@@ -1,0 +1,56 @@
+<div class="fixed-top sgp-margin sgp-text-color sgp-font-size sgp-font-size-user-card sgp-font-italic">
+    
+    <div class="conteiner">
+        <div class="row w-75 sgp-table-layout-fixed">
+            <div class="col">
+                <img src="../../assets/image/default-user-photo.png">
+            </div>
+            <div class="col">
+                <div class="conteiner">
+                    <div class="row">
+                        <div class="col sgp-font-bold">
+                            Username:
+                        </div>
+                        <div class="col sgp-text-decoration">
+                            {{this.userName}}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col sgp-font-bold">
+                            Email:
+                        </div>
+                        <div class="col sgp-text-decoration">
+                            {{this.email}}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col sgp-font-bold">
+                            Favorite games:
+                        </div>
+                        <div class="col sgp-font-normail">
+                            <div *ngFor="let gameName of this.favouriteGames">
+                                '{{gameName}}'
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row w-25 sgp-table-layout-fixed">
+            <div class="col">
+                <div class="conteiner">
+                    <div class="row">
+                        <div class="col sgp-font-bold">
+                            Best results:
+                        </div>
+                        <div class="col">
+                            <div *ngFor="let bestResult of this.bestResults">
+                                {{bestResult}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
