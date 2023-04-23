@@ -8,7 +8,7 @@
             </div>
             <div class="row sgp-margin">
                 <div class="col">
-                    <a href="{{mainButtonAuth.redirectPath}}">
+                    <a *ngIf="mainButtonAuth" href="{{mainButtonAuth.redirectPath}}">
                         <input type="button" value="{{mainButtonAuth.value}}" 
                             class="component-invisable-background w-100
                                 sgp-border-color sgp-text-color sgp-font-bold sgp-font-italic sgp-bth-round sgp-bth-background">

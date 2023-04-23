@@ -1,10 +1,10 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LogInComponent } from './log-in/log-in.component';
-import { AuthorizationComponent } from './authorization/authorization.component';
+import { AuthorizationComponent } from "./authorization/AuthorizationComponent";
 import { LogoAuthComponent } from './logo-auth/logo-auth.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { UserPageComponent } from './user-page/user-page.component';
@@ -27,6 +27,7 @@ import { GamePageComponent } from './game-page/game-page.component';
     AppRoutingModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class AppModule { }
