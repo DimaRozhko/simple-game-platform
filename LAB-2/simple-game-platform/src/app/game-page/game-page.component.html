@@ -3,7 +3,7 @@
         <div class="sgp-border-color sgp-field-round padding-3v">
             <div class="conteiner">
                 <div *ngFor="let gameRow of this.gameField" class="row">
-                    <input id="game-button" *ngFor="let item of gameRow" type="button" value="{{item.value}}" (mouseover)="onMouseOverItem($event)"
+                    <input id="game-button" [attr.cy-data]="'myLink-' + i" *ngFor="let item of gameRow; let i = index" type="button" value="{{item.value}}" (mouseover)="onMouseOverItem($event)"
                         (mouseout)="onMouseOutItem($event)" (mousedown)="onMouseDown($event)" (mouseup)="onMouseUp($event)"
                         class="col sgp-font-bold sgp-border-color sgp-field-round component-invisable-background sgp-text-color sgp-bth-background"
                         [ngClass]="item.class" [disabled]="this.isWin">
