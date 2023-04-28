@@ -12,6 +12,7 @@ describe('[simple-game-platform] End-2-End test. Sign up scenario', () => {
         cy.visit(href ? href : '/sign-up');
       });
     cy.url().should('include', '/user-page');
+    cy.screenshot()
   })
 
   it('Visits log-in page -> navigate to sign-up -> input data -> log in', () => {
@@ -29,5 +30,6 @@ describe('[simple-game-platform] End-2-End test. Sign up scenario', () => {
         cy.visit(href ? href : '/sign-up');
       });
     cy.url().should('include', '/user-page');
+    cy.screenshot()
   })
 })
