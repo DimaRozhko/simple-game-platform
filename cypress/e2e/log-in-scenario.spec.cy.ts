@@ -1,4 +1,4 @@
-describe('[simple-game-platform] End-2-End test. Log in scenario', () => {
+describe('[simple-game-platform] End-2-End test. Log in scenario', { viewportHeight: 720, viewportWidth: 1280}, () => {
 
 
   it('Visits log-in page -> input data -> log in', () => {

@@ -1,4 +1,4 @@
-describe('[simple-game-platform] End-2-End test. Sign up scenario', () => {
+describe('[simple-game-platform] End-2-End test. Sign up scenario',  { viewportHeight: 720, viewportWidth: 1280}, () => {
 
 
   it('Visits sign-up page -> input data -> log in', () => {
