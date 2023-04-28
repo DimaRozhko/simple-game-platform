@@ -1,4 +1,4 @@
-describe('[simple-game-platform] End-2-End test. Sidebar navigation scenario', () => {
+describe('[simple-game-platform] End-2-End test. Sidebar navigation scenario',  { viewportHeight: 720, viewportWidth: 1280}, () => {
 
   it('Visits user-page. Navigate to information, game pages', () => {
     cy.visit('/user-page');
@@ -14,6 +14,7 @@ describe('[simple-game-platform] End-2-End test. Sidebar navigation scenario', (
         cy.visit(href ? href : '/user-page');
       });
     cy.url().should('include', '/game-page');
+    cy.screenshot()
   });
 
   it('Visits info-page. Navigate to user, game pages', () => { 
@@ -30,6 +31,7 @@ describe('[simple-game-platform] End-2-End test. Sidebar navigation scenario', (
         cy.visit(href ? href : '/info-page');
       });
     cy.url().should('include', '/game-page');
+    cy.screenshot()
   });
 
   it('Visits game-page. Navigate to user, information pages', () => { 
@@ -46,5 +48,6 @@ describe('[simple-game-platform] End-2-End test. Sidebar navigation scenario', (
         cy.visit(href ? href : '/game-page');
       });
     cy.url().should('include', '/info-page');
+    cy.screenshot()
   });
 })

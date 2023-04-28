@@ -1,4 +1,4 @@
-describe('[simple-game-platform] End-2-End test check routing and other component inside page', () => {
+describe('[simple-game-platform] End-2-End test check routing and other component inside page',  { viewportHeight: 720, viewportWidth: 1280}, () => {
 
   it('Visits root page and check component inside. Check redirection \'/\' -> \'/log-in\'', () => {
     cy.visit('/');
