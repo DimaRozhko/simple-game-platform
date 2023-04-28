@@ -9,7 +9,7 @@ describe('[simple-game-platform] End-2-End test. Game scenario', { viewportHeigh
     // cy.screenshot();
     cy.get('input[value="2"]').trigger('mouseover');
     cy.get('input[value="3"]').trigger('mouseover');
-    // cy.screenshot();
+    cy.screenshot();
   });
 
   it('Visits game-page. Mouse ower -> down -> up. Game not started', () => {
